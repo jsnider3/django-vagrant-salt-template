@@ -29,7 +29,7 @@ $ sudo pip install django
 2. Start the project from the template:
 
 ```
-$ django-admin.py startproject --template=https://github.com/Nitron/django-vagrant-salt-template/archive/master.zip --extension=py,sls <project name>
+$ django-admin.py startproject --template=https://github.com/jsnider3/django-vagrant-salt-template/archive/master.zip --extension=py,sls <project name>
 $ cd <project name>
 ```
 
