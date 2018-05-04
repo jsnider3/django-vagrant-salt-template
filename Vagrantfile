@@ -2,13 +2,7 @@
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
-  config.vm.box = "xenial64"
-  config.vm.provider :virtualbox do |vm, override|
-    override.vm.box_url = "http://files.vagrantup.com/xenial64.box"
-  end
-  config.vm.provider :vmware_fusion do |vm, override|
-    override.vm.box_url = "http://files.vagrantup.com/xenial64_vmware_fusion.box"
-  end
+  config.vm.box = "bento/ubuntu-16.04"
 
   config.vm.hostname = 'vagrant'
   config.vm.network :forwarded_port, guest: 80, host: 8000
